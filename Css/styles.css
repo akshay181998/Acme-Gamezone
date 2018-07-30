@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css?family=Hanalei+Fill');
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon|Hanalei+Fill');
+
+:root{
+    --header-color:rgb(51, 51, 51);
+    --orange-color: rgb(238, 255, 0);
+}
+
+body{
+    margin:0px;
+    padding:0px;
+    background-color:whitesmoke;
+    color:rgb(10, 10, 10);
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+header{
+    display:grid;
+    grid-template-columns: 20% 50% 30% ;
+    height:50px;
+    background-color:var(--header-color);
+}
+
+header h1{
+    font-size:1.6em;
+    text-transform:uppercase;
+    margin:0px;
+    padding-top:10px;
+    font-family: 'Hanalei Fill', cursive;
+    text-align:center;
+    background-color:var(--header-color);
+    color:whitesmoke;
+}
+header .icon{
+    color:var(--orange-color);
+    font-family: 'Hanalei Fill', cursive;
+    background-color:var(--header-color);
+}
+
+header ul {
+    list-style-type:none;
+    display:block;
+    font-size:1.3em;
+    background-color:var(--header-color);
+    color:whitesmoke;
+}
+header ul li a{
+    float:left;
+    margin:0px;
+    padding:0px 80px 0px 60px;
+    margin:0px 0px 15px 0px;
+    text-decoration:none;
+    text-transform: uppercase;
+    background-color:var(--header-color);
+    color:whitesmoke;
+
+}
+
+header input{
+    border:none;
+    height:30px;
+    margin: 10px 0px 20px 80px;
+    width:400px;
+    font-size:1.1em;
+    border-radius:0.1rem;
+}
+.Mario{
+    height:40px;
+    background-color:black;
+    width:100%;
+    padding:0px;
+    margin:0px;
+    position:relative;
+    border-bottom: 5px solid var(--orange-color);
+}
+.Mario ul{
+    padding:0px;
+    margin:0px;
+    float:left;
+    background-color:black;
+    position:relative;
+}
+
+.Mario ul li {
+    background-color:black;
+    color:whitesmoke;
+    display:block;
+    float:left;
+    padding:5px 120px 0px 60px;
+    text-transform:uppercase;
+    text-decoration:none;
+    font-size:1.1em;
+    position:relative;
+}
+
+.Mario ul li a{
+    background-color:black;
+    color:whitesmoke;
+    display:block;
+    float:left;
+    text-transform:uppercase;
+    text-decoration:none;
+    font-size:1.1em;
+}
+.Mario ul li ul{
+    background-color:var(--header-color);
+    position:absolute;
+    top:40px;
+    padding:0px;
+    width:220px;
+}
+.Mario ul li ul li  {
+    display:none;
+    position:relative;
+    background-color:var(--header-color);
+    padding:5px 150px 5px 10px;
+    border: 5px solid black;
+    right:20px;
+    opacity:0;
+}
+.Mario ul :hover li{
+    animation: load 1s forwards;
+    display:block;
+}
+.Mario ul li :hover ul{
+    animation: load 1s forwards;
+    display:block;
+}
+.Mario ul li ul li a {
+    display:block;
+    position:relative;
+    width:80px;  
+    background-color:var(--header-color);
+}
+
+@keyframes load{
+    0%{
+        transform:translateX(25px);
+    }
+    100%{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+    .Mario ul li ul li:first-child{
+        animation-delay:0s;
+    }
+    .Mario ul li ul li:nth-child(2){
+        animation-delay:.5s;
+    }
+    .Mario ul li ul li:nth-child(3){
+        animation-delay:1s;
+    }  
+    .Mario ul li ul li:nth-child(4){
+        animation-delay:1.5s;
+    }
+    .Mario ul li ul li:nth-child(5){
+        animation-delay:2s;
+    }
+
+#showcase1{
+    min-height:600px;
+    background:url('../Img/adult-competition-computers-929831.jpg') no-repeat;
+    background-size:cover;
+    color:whitesmoke;
+    background-attachment:fixed;
+}
+
+#showcase1 h1,p{
+    margin:0px;
+    text-align:center;
+}
+
+#showcase1 h1{
+    font-size:2.8em;
+    padding:100px 0px 100px 0px;
+    text-transform:uppercase;
+}
+
+#showcase1 p{
+    width:70%;
+    margin:auto;
+    font-size:1.3em;
+}
+
+#showcase2{
+    min-height:680px;
+    background:url('../Img/blur-close-up-device-442576.jpg') no-repeat;
+    background-size:cover;
+    color:rgb(15, 15, 15);
+    background-attachment:fixed;
+}
+.sign1{
+    height:70px;
+    background-color:black;
+    display:grid;
+    grid-template-columns:60% 40%;
+    color:whitesmoke;
+}
+.sign1 h1{
+    margin:0px;
+    padding:15px 0px 5px 50px;
+    text-transform:uppercase;
+    font-size:1.6em;
+}
+.form1{
+    background-color:black;
+    padding:15px 0px 5px 100px;
+}
+.form1 input{
+    width:300px;
+    height:30px;
+    border:none;
+}
+
+.form1 button {
+    width:100px;
+    height:33px;
+    border:none;
+    background-color:var(--orange-color);
+    color:black;
+    font-weight:bold;
+}
+#showcase2 h1,p{
+    margin:0px;
+    text-align:center;
+}
+
+#showcase2 h1{
+    font-size:2.8em;
+    padding:50px 0px 100px 0px;
+    text-transform:uppercase;
+}
+
+#showcase2 p{
+    width:70%;
+    margin:auto;
+    font-size:1.3em;
+}
+.sign2{
+    height:70px;
+    background-color:black;
+    display:grid;
+    grid-template-columns:60% 40%;
+    color:whitesmoke;
+}
+.sign2 h1{
+    margin:0px;
+    padding:15px 0px 5px 50px;
+    text-transform:uppercase;
+    font-size:1.6em;
+}
+.form2{
+    background-color:black;
+    padding:15px 0px 5px 100px;
+}
+.form2 input{
+    width:300px;
+    height:30px;
+    border:none;
+}
+
+.form2 button {
+    width:100px;
+    height:33px;
+    border:none;
+    background-color:var(--orange-color);
+    color:black;
+    font-weight:bold;
+}
+#showcase3{
+    min-height:610px;
+    background:url('../Img/blue-controller-dualshock-18174.jpg') no-repeat 0 -200px;
+    background-size:cover;
+    color:whitesmoke;
+    background-attachment:fixed;
+}
+
+#showcase3 h1,p{
+    margin:0px;
+    text-align:center;
+}
+
+#showcase3 h1{
+    font-size:2.8em;
+    padding:50px 0px 100px 0px;
+    text-transform:uppercase;
+}
+
+#showcase3 p{
+    width:70%;
+    margin:auto;
+    font-size:1.3em;
+}
+
+.sign3{
+    height:70px;
+    background-color:black;
+    display:grid;
+    grid-template-columns:60% 40%;
+    color:whitesmoke;
+    border-top: 3px solid var(--orange-color);
+}
+.sign3 h1{
+    margin:0px;
+    padding:15px 0px 5px 50px;
+    text-transform:uppercase;
+    font-size:1.6em;
+}
+
+.form3{
+    background-color:black;
+    padding:15px 0px 5px 100px;
+}
+.form3 input{
+    width:300px;
+    height:30px;
+    border:none;
+}
+
+.form3 button {
+    width:100px;
+    height:33px;
+    border:none;
+    background-color:var(--orange-color);
+    color:black;
+    font-weight:bold;
+}
+footer{
+    height:50px;
+    background-color:var(--header-color);
+    text-align:center;
+    padding-top:20px;
+    font-size:1.8em;
+    color:whitesmoke;
+}
+
+footer a{
+    text-decoration:none;
+    color:var(--orange-color);
+}
